@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        "<link rel="stylesheet" href="./responsivestyles.css">
+    </head>
+    <body>
+        <h1 id="title">Survery Form Project</h1>
+        <p id="description">Welcome and thank you for participating. Please fill and submit the form below.</p>
+        
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name: </label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+
+                <label for="email" id="email-label">Email: </label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+
+                <label for="number" id="number-label">Age (Optional): </label>
+                <input id="number" type="number" min="0" max="99" placeholder="Age">
+            </fieldset>
+
+            <fieldset>
+            <label for="dropdown"> How many hours per week do you study?
+                <select id="dropdown" type="select" placeholder="Select you current situacion">
+                <option>Select one</option>
+                <option> 1 hour </option>
+                <option> 2 hours </option>
+                <option> 3 hours </option>
+                <option> 4 hours or more </option>
+            </select>
+            </label>
+            <p>How likely are you to complete an online course?</p>
+            
+                <label for="very-likely">
+                <input type="radio" id="very-likely" value="very-likely" name="course"/>Very likely</label>
+
+                <label for="maybe">
+                <input type="radio" id="maybe" value="maybe" name="course"/>
+                Maybe with help</label>
+
+                <label for="unlikely">
+                <input type="radio" id="unlikely" value="very-unlikely" name="course">Very unlikely</label>
+            </fieldset>
+            <fieldset>
+            What courses are you intersted in?
+            <label for="">
+                <input type="checkbox" value="Computer science" > Computer Science
+            </label>
+            <label for="">
+                <input type="checkbox" value="Mathematics"> Mathematics
+            </label>
+            <label for="">
+                <input type="checkbox" value="Marketing"> Marketing
+            </label>
+            <label for="">
+                <input type="checkbox" value="Business"> Business
+            </label>
+            <label for="">
+                <input type="checkbox" value="Natural science"> Natural Science and preservation
+            </label>
+            </fieldset> 
+            <fieldset> 
+            <label for="motivation">Tell us why you want to study online
+            <textarea id="motivation" name="motivatio" rows="5" cols="35" placeholder="I want to study online because..."></textarea></label>
+            </fieldset>    
+            <input type="submit" id="submit">
+        </form>
+    </body>
+</html>
